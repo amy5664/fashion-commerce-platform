@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.boot.dao.CartDAO">
+
+    <resultMap id="cartResultMap" type="com.boot.dto.CartDTO">
+        <id property="cartId" column="CART_ID"/>
+        <result property="memberId" column="MEMBER_ID"/>
+        <result property="prodId" column="PROD_ID"/>
+        <result property="cartQty" column="CART_QTY"/>
+        <result property="regDate" column="REG_DATE"/>
+        <result property="prodName" column="PROD_NAME"/>
+        <result property="prodPrice" column="PROD_PRICE"/>
+        <result property="prodSeller" column="PROD_SELLER"/>
+        <result property="prodImage" column="PROD_IMAGE"/>
+    </resultMap>
+
+    <sql id="cartListColumns">
+        SELECT 
+        C.CART_ID, C.MEMBER_ID, C.PROD_ID, C.CART_QTY, C.REG_DATE, 
+        P.PROD_NAME, P.PROD_PRICE, P.PROD_SELLER, 
+        I.IMG_PATH AS PROD_IMAGE
+        FROM CART_DB C 
+		JOIN PRODUCT_DB P ON C.PROD_ID = P.PROD_ID
+		LEFT JOIN IMAGE_DB I ON P.PROD_ID = I.IMG_PROD_ID AND I.IS_MAIN = 'Y'
+    </sql>
+
+    <select id="getCartListByMemberId" resultMap="cartResultMap">
+        <include refid="cartListColumns"/>
+        WHERE C.MEMBER_ID = #{memberId}
+		ORDER BY C.REG_DATE DESC
+    </select>
+
+    <select id="getCartListByCartIds" parameterType="java.util.Map" resultMap="cartResultMap">
+        <include refid="cartListColumns"/>
+        WHERE C.MEMBER_ID = #{memberId}
+        AND C.CART_ID IN
+        <foreach item="cartId" collection="cartIds" open="(" separator="," close=")">
+            #{cartId}
+        </foreach>
+    </select>
+
+    <select id="getCartItemByMemberIdAndProdId" resultType="com.boot.dto.CartDTO">
+        SELECT CART_ID as cartId, MEMBER_ID as memberId, PROD_ID as prodId, CART_QTY as cartQty, REG_DATE as regDate
+        FROM CART_DB
+        WHERE MEMBER_ID = #{memberId} AND PROD_ID = #{prodId}
+    </select>
+
+    <insert id="insertCart">
+        INSERT INTO CART_DB (CART_ID, MEMBER_ID, PROD_ID, CART_QTY, REG_DATE)
+        VALUES (CART_SEQ.NEXTVAL, #{memberId}, #{prodId}, #{cartQty}, SYSDATE)
+    </insert>
+
+    <update id="updateCartQuantity" parameterType="com.boot.dto.CartDTO">
+        UPDATE CART_DB
+        SET CART_QTY = #{cartQty}
+        WHERE CART_ID = #{cartId}
+    </update>
+
+    <delete id="deleteCart">
+        DELETE FROM CART_DB
+        WHERE CART_ID = #{cartId} AND MEMBER_ID = #{memberId}
+    </delete>
+
+    <delete id="clearCartByMemberId">
+        DELETE FROM CART_DB
+        WHERE MEMBER_ID = #{memberId}
+    </delete>
+
+</mapper>
