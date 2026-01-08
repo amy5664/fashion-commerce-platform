@@ -14,48 +14,178 @@
 
 ---
 
-## 🛠 Tech Stack
+<h2>🛠 Tech Stack</h2>
 
-### 🌐 프론트엔드
-| 기술 | 구분 | 구분 | 설명 |
-|:--:|:--:|:--:|:--|
-| ![JSP](https://img.shields.io/badge/JSP-007396?style=flat&logo=java&logoColor=white) | &nbsp; | &nbsp; | 서버 사이드 렌더링 기반 동적 페이지 구성 |
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | &nbsp; | UI 마크업 및 스타일링 |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white) | &nbsp; | 사용자 인터랙션 및 Ajax 통신 처리 |
-| ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) | &nbsp; | &nbsp; | 반응형 UI 컴포넌트 기반 화면 구성 |
+<h3>🌐 프론트엔드</h3>
+<table width="100%">
+  <thead>
+    <tr>
+      <th style="width:30%; text-align:center;">기술</th>
+      <th style="width:70%; text-align:left;">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/JSP-007396?style=flat&logo=java&logoColor=white">
+      </td>
+      <td>서버 사이드 렌더링 기반 동적 페이지 구성</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white">
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white">
+      </td>
+      <td>UI 마크업 및 스타일링</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">
+        <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white">
+      </td>
+      <td>사용자 인터랙션 및 Ajax 통신 처리</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white">
+      </td>
+      <td>반응형 UI 컴포넌트 기반 화면 구성</td>
+    </tr>
+  </tbody>
+</table>
 
----
+<br>
 
-### 🧩 백엔드
-| 기술 |  |  | 설명 |
-|:--:|:--:|:--:|:--|
-| ![Java](https://img.shields.io/badge/Java-17-007396?style=flat&logo=java&logoColor=white) |  |  | 백엔드 핵심 언어 및 서버 로직 구현 |
-| ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.x-6DB33F?style=flat&logo=springboot&logoColor=white) |  |  | MVC 기반 웹 애플리케이션 / REST API 구성 |
-| ![Spring Security](https://img.shields.io/badge/Spring%20Security-6.x-6DB33F?style=flat&logo=springsecurity&logoColor=white) |  |  | 인증·인가 및 권한 기반 접근 제어 |
-| ![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=flat) |  |  | SQL 중심 데이터 처리 및 동적 쿼리 매핑 |
-| ![Apache Tomcat](https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=black) |  |  | 웹 애플리케이션 구동 환경 |
+<h3>🧩 백엔드</h3>
+<table width="100%">
+  <thead>
+    <tr>
+      <th style="width:30%; text-align:center;">기술</th>
+      <th style="width:70%; text-align:left;">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Java-17-007396?style=flat&logo=openjdk&logoColor=white">
+      </td>
+      <td>백엔드 핵심 언어 및 서버 로직 구현</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Spring_Boot-3.2.x-6DB33F?style=flat&logo=spring-boot&logoColor=white">
+      </td>
+      <td>MVC 기반 웹 애플리케이션 / REST API 구성</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Spring_Security-6.x-6DB33F?style=flat&logo=spring-security&logoColor=white">
+      </td>
+      <td>인증·인가 및 권한 기반 접근 제어</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/MyBatis-000000?style=flat">
+      </td>
+      <td>SQL 중심 데이터 처리 및 동적 쿼리 매핑</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Apache_Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=black">
+      </td>
+      <td>웹 애플리케이션 구동 환경</td>
+    </tr>
+  </tbody>
+</table>
 
----
+<br>
 
-### 🗄️ 데이터베이스 & 외부 연동
-| 기술 |  |  | 설명 |
-|:--:|:--:|:--:|:--|
-| ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white) |  |  | 상품·주문 등 핵심 데이터 관리 |
-| ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat&logo=mysql&logoColor=white) |  |  | 관계형 데이터 저장 및 조회 |
-| ![MongoDB](https://img.shields.io/badge/MongoDB-6.0-47A248?style=flat&logo=mongodb&logoColor=white) |  |  | 채팅 로그 등 메시지성 데이터 저장 |
-| ![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?style=flat&logo=openai&logoColor=white) |  |  | AI 상담 응답 처리 |
-| ![Toss](https://img.shields.io/badge/Toss%20Payments-0064FF?style=flat) |  |  | 결제 승인 및 위변조 검증 |
+<h3>🗄️ 데이터베이스 & 외부 연동</h3>
+<table width="100%">
+  <thead>
+    <tr>
+      <th style="width:30%; text-align:center;">기술</th>
+      <th style="width:70%; text-align:left;">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white">
+      </td>
+      <td>상품·주문 등 핵심 데이터 관리</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat&logo=mysql&logoColor=white">
+      </td>
+      <td>관계형 데이터 저장 및 조회</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/MongoDB-6.0-47A248?style=flat&logo=mongodb&logoColor=white">
+      </td>
+      <td>채팅 로그 등 메시지성 데이터 저장</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?style=flat&logo=openai&logoColor=white">
+      </td>
+      <td>AI 상담 응답 처리</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Toss_Payments-0064FF?style=flat">
+      </td>
+      <td>결제 승인 및 위변조 검증</td>
+    </tr>
+  </tbody>
+</table>
 
----
+<br>
 
-### 🤝 협업 & 도구
-| 기술 |  |  | 설명 |
-|:--:|:--:|:--:|:--|
-| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) |  |  | 형상 관리 및 협업 |
-| ![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white) |  |  | 문서화 및 일정 관리 |
-| ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white) |  |  | 이슈 및 작업 관리 |
-| ![Slack](https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white) |  |  | 팀 커뮤니케이션 |
-| ![KakaoTalk](https://img.shields.io/badge/KakaoTalk-FFCD00?style=flat&logo=kakaotalk&logoColor=black) |  |  | 실시간 소통 |
+<h3>🤝 협업 & 도구</h3>
+<table width="100%">
+  <thead>
+    <tr>
+      <th style="width:30%; text-align:center;">기술</th>
+      <th style="width:70%; text-align:left;">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
+      </td>
+      <td>형상 관리 및 협업</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white">
+      </td>
+      <td>문서화 및 일정 관리</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white">
+      </td>
+      <td>이슈 및 작업 관리</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white">
+      </td>
+      <td>팀 커뮤니케이션</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/KakaoTalk-FFCD00?style=flat&logo=kakaotalk&logoColor=black">
+      </td>
+      <td>실시간 소통</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 ---
