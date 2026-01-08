@@ -17,12 +17,12 @@
 ## 🛠 Tech Stack
 
 ### 🌐 프론트엔드
-| 기술 |  |  | 설명 |
+| 기술 | 구분 | 구분 | 설명 |
 |:--:|:--:|:--:|:--|
-| ![JSP](https://img.shields.io/badge/JSP-007396?style=flat&logo=java&logoColor=white) |  |  | 서버 사이드 렌더링 기반 동적 페이지 구성 |
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) |  | UI 마크업 및 스타일링 |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white) |  | 사용자 인터랙션 및 Ajax 통신 처리 |
-| ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) |  |  | 반응형 UI 컴포넌트 기반 화면 구성 |
+| ![JSP](https://img.shields.io/badge/JSP-007396?style=flat&logo=java&logoColor=white) | &nbsp; | &nbsp; | 서버 사이드 렌더링 기반 동적 페이지 구성 |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | &nbsp; | UI 마크업 및 스타일링 |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white) | &nbsp; | 사용자 인터랙션 및 Ajax 통신 처리 |
+| ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) | &nbsp; | &nbsp; | 반응형 UI 컴포넌트 기반 화면 구성 |
 
 ---
 
