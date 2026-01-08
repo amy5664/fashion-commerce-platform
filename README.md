@@ -17,45 +17,46 @@
 ## 🛠 Tech Stack
 
 ### 🌐 프론트엔드
-| 기술 | 설명 |
-|:--:|:--|
-| ![JSP](https://img.shields.io/badge/JSP-007396?style=flat&logo=java&logoColor=white) | 서버 사이드 렌더링 기반 동적 페이지 구성 |
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) <br> ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | UI 마크업 및 스타일링 |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) <br> ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white) | 사용자 인터랙션 및 Ajax 통신 처리 |
-| ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) | 반응형 UI 컴포넌트 기반 화면 구성 |
+| 기술 |  |  | 설명 |
+|:--:|:--:|:--:|:--|
+| ![JSP](https://img.shields.io/badge/JSP-007396?style=flat&logo=java&logoColor=white) |  |  | 서버 사이드 렌더링 기반 동적 페이지 구성 |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) |  | UI 마크업 및 스타일링 |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white) |  | 사용자 인터랙션 및 Ajax 통신 처리 |
+| ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) |  |  | 반응형 UI 컴포넌트 기반 화면 구성 |
 
 ---
 
 ### 🧩 백엔드
-| 기술 | 설명 |
-|:--:|:--|
-| ![Java](https://img.shields.io/badge/Java-17-007396?style=flat&logo=java&logoColor=white) | 백엔드 핵심 언어 및 서버 로직 구현 |
-| ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.x-6DB33F?style=flat&logo=springboot&logoColor=white) | MVC 기반 웹 애플리케이션 / REST API 구성 |
-| ![Spring Security](https://img.shields.io/badge/Spring%20Security-6.x-6DB33F?style=flat&logo=springsecurity&logoColor=white) | 인증·인가 및 권한 기반 접근 제어 |
-| ![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=flat) | SQL 중심 데이터 처리 및 동적 쿼리 매핑 |
-| ![Apache Tomcat](https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=black) | 웹 애플리케이션 구동 환경 |
+| 기술 |  |  | 설명 |
+|:--:|:--:|:--:|:--|
+| ![Java](https://img.shields.io/badge/Java-17-007396?style=flat&logo=java&logoColor=white) |  |  | 백엔드 핵심 언어 및 서버 로직 구현 |
+| ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.x-6DB33F?style=flat&logo=springboot&logoColor=white) |  |  | MVC 기반 웹 애플리케이션 / REST API 구성 |
+| ![Spring Security](https://img.shields.io/badge/Spring%20Security-6.x-6DB33F?style=flat&logo=springsecurity&logoColor=white) |  |  | 인증·인가 및 권한 기반 접근 제어 |
+| ![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=flat) |  |  | SQL 중심 데이터 처리 및 동적 쿼리 매핑 |
+| ![Apache Tomcat](https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=black) |  |  | 웹 애플리케이션 구동 환경 |
 
 ---
 
 ### 🗄️ 데이터베이스 & 외부 연동
-| 기술 | 설명 |
-|:--:|:--|
-| ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white) | 상품·주문 등 핵심 데이터 관리 |
-| ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat&logo=mysql&logoColor=white) | 관계형 데이터 저장 및 조회 |
-| ![MongoDB](https://img.shields.io/badge/MongoDB-6.0-47A248?style=flat&logo=mongodb&logoColor=white) | 채팅 로그 등 메시지성 데이터 저장 |
-| ![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?style=flat&logo=openai&logoColor=white) | AI 상담(상품 문의 응답) |
-| ![Toss](https://img.shields.io/badge/Toss%20Payments-0064FF?style=flat) | 결제 승인 및 위변조 검증 |
+| 기술 |  |  | 설명 |
+|:--:|:--:|:--:|:--|
+| ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white) |  |  | 상품·주문 등 핵심 데이터 관리 |
+| ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat&logo=mysql&logoColor=white) |  |  | 관계형 데이터 저장 및 조회 |
+| ![MongoDB](https://img.shields.io/badge/MongoDB-6.0-47A248?style=flat&logo=mongodb&logoColor=white) |  |  | 채팅 로그 등 메시지성 데이터 저장 |
+| ![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?style=flat&logo=openai&logoColor=white) |  |  | AI 상담 응답 처리 |
+| ![Toss](https://img.shields.io/badge/Toss%20Payments-0064FF?style=flat) |  |  | 결제 승인 및 위변조 검증 |
 
 ---
 
 ### 🤝 협업 & 도구
-| 기술 | 설명 |
-|:--:|:--|
-| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) | 형상 관리 및 협업 |
-| ![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white) | 문서화 및 일정 관리 |
-| ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white) | 이슈 및 작업 관리 |
-| ![Slack](https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white) | 팀 커뮤니케이션 |
-| ![KakaoTalk](https://img.shields.io/badge/KakaoTalk-FFCD00?style=flat&logo=kakaotalk&logoColor=black) | 실시간 소통 |
+| 기술 |  |  | 설명 |
+|:--:|:--:|:--:|:--|
+| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) |  |  | 형상 관리 및 협업 |
+| ![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white) |  |  | 문서화 및 일정 관리 |
+| ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white) |  |  | 이슈 및 작업 관리 |
+| ![Slack](https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white) |  |  | 팀 커뮤니케이션 |
+| ![KakaoTalk](https://img.shields.io/badge/KakaoTalk-FFCD00?style=flat&logo=kakaotalk&logoColor=black) |  |  | 실시간 소통 |
+
 
 ---
 
