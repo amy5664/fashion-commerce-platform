@@ -14,234 +14,175 @@
 
 ---
 
-<h2>🛠 Tech Stack</h2>
+## 🛠 Tech Stack
 
-<h3>🌐 프론트엔드</h3>
-<table width="100%">
-  <thead>
-    <tr>
-      <th style="width:30%; text-align:center;">기술</th>
-      <th style="width:70%; text-align:left;">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/JSP-007396?style=flat&logo=java&logoColor=white">
-      </td>
-      <td>서버 사이드 렌더링 기반 동적 페이지 구성</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white">
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white">
-      </td>
-      <td>UI 마크업 및 스타일링</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">
-        <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white">
-      </td>
-      <td>사용자 인터랙션 및 Ajax 통신 처리</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white">
-      </td>
-      <td>반응형 UI 컴포넌트 기반 화면 구성</td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-
-<h3>🧩 백엔드</h3>
-<table width="100%">
-  <thead>
-    <tr>
-      <th style="width:30%; text-align:center;">기술</th>
-      <th style="width:70%; text-align:left;">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Java-17-007396?style=flat&logo=openjdk&logoColor=white">
-      </td>
-      <td>백엔드 핵심 언어 및 서버 로직 구현</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Spring_Boot-3.2.x-6DB33F?style=flat&logo=spring-boot&logoColor=white">
-      </td>
-      <td>MVC 기반 웹 애플리케이션 / REST API 구성</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Spring_Security-6.x-6DB33F?style=flat&logo=spring-security&logoColor=white">
-      </td>
-      <td>인증·인가 및 권한 기반 접근 제어</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/MyBatis-000000?style=flat">
-      </td>
-      <td>SQL 중심 데이터 처리 및 동적 쿼리 매핑</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Apache_Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=black">
-      </td>
-      <td>웹 애플리케이션 구동 환경</td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-
-<h3>🗄️ 데이터베이스 & 외부 연동</h3>
-<table width="100%">
-  <thead>
-    <tr>
-      <th style="width:30%; text-align:center;">기술</th>
-      <th style="width:70%; text-align:left;">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white">
-      </td>
-      <td>상품·주문 등 핵심 데이터 관리</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat&logo=mysql&logoColor=white">
-      </td>
-      <td>관계형 데이터 저장 및 조회</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/MongoDB-6.0-47A248?style=flat&logo=mongodb&logoColor=white">
-      </td>
-      <td>채팅 로그 등 메시지성 데이터 저장</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?style=flat&logo=openai&logoColor=white">
-      </td>
-      <td>AI 상담 응답 처리</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Toss_Payments-0064FF?style=flat">
-      </td>
-      <td>결제 승인 및 위변조 검증</td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-
-<h3>🤝 협업 & 도구</h3>
-<table width="100%">
-  <thead>
-    <tr>
-      <th style="width:30%; text-align:center;">기술</th>
-      <th style="width:70%; text-align:left;">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
-      </td>
-      <td>형상 관리 및 협업</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white">
-      </td>
-      <td>문서화 및 일정 관리</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white">
-      </td>
-      <td>이슈 및 작업 관리</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white">
-      </td>
-      <td>팀 커뮤니케이션</td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/KakaoTalk-FFCD00?style=flat&logo=kakaotalk&logoColor=black">
-      </td>
-      <td>실시간 소통</td>
-    </tr>
-  </tbody>
-</table>
-
-
+### 🌐 프론트엔드
+| 기술 | 설명 |
+|:--:|:--|
+| ![JSP](https://img.shields.io/badge/JSP-007396?style=flat&logo=java&logoColor=white) | 서버 사이드 렌더링 기반 동적 페이지 구성 |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) <br> ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | UI 마크업 및 스타일링 |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) <br> ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white) | 사용자 인터랙션 및 Ajax 통신 처리 |
+| ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) | 반응형 UI 컴포넌트 기반 화면 구성 |
 
 ---
 
+### 🧩 백엔드
+| 기술 | 설명 |
+|:--:|:--|
+| ![Java](https://img.shields.io/badge/Java-17-007396?style=flat&logo=java&logoColor=white) | 백엔드 핵심 언어 및 서버 로직 구현 |
+| ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.x-6DB33F?style=flat&logo=springboot&logoColor=white) | MVC 기반 웹 애플리케이션 / REST API 구성 |
+| ![Spring Security](https://img.shields.io/badge/Spring%20Security-6.x-6DB33F?style=flat&logo=springsecurity&logoColor=white) | 인증·인가 및 권한 기반 접근 제어 |
+| ![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=flat) | SQL 중심 데이터 처리 및 동적 쿼리 매핑 |
+| ![Apache Tomcat](https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=black) | 웹 애플리케이션 구동 환경 |
+
+---
+
+### 🗄️ 데이터베이스 & 외부 연동
+| 기술 | 설명 |
+|:--:|:--|
+| ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white) | 상품·주문 등 핵심 데이터 관리 |
+| ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat&logo=mysql&logoColor=white) | 관계형 데이터 저장 및 조회 |
+| ![MongoDB](https://img.shields.io/badge/MongoDB-6.0-47A248?style=flat&logo=mongodb&logoColor=white) | 채팅 로그 등 메시지성 데이터 저장 |
+| ![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?style=flat&logo=openai&logoColor=white) | AI 상담(상품 문의 응답) |
+| ![Toss](https://img.shields.io/badge/Toss%20Payments-0064FF?style=flat) | 결제 승인 및 위변조 검증 |
+
+---
+
+### 🤝 협업 & 도구
+| 기술 | 설명 |
+|:--:|:--|
+| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) | 형상 관리 및 협업 |
+| ![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white) | 문서화 및 일정 관리 |
+| ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white) | 이슈 및 작업 관리 |
+| ![Slack](https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white) | 팀 커뮤니케이션 |
+| ![KakaoTalk](https://img.shields.io/badge/KakaoTalk-FFCD00?style=flat&logo=kakaotalk&logoColor=black) | 실시간 소통 |
+
+---
+## 📁 Project Structure (프로젝트 폴더 구조)
+
+본 프로젝트는 **Spring Boot 기반 웹 애플리케이션**으로, 서버 사이드 렌더링(JSP)과 정적 리소스 분리를 고려한 구조를 따르고 있습니다.
+- MVC 패턴에 맞춘 **역할별 패키지 분리**
+- JSP 템플릿과 정적 리소스(css/js/img) 분리로 유지보수 용이
+- MyBatis Mapper와 비즈니스 로직 명확히 분리
+- 관리자/사용자/상품/주문 도메인 구조가 한눈에 파악 가능
+
+```bash
+Product-sales-platform-boot/
+├─ src/
+│  ├─ main/
+│  │  ├─ java/
+│  │  │  └─ com.boot
+│  │  │     ├─ config/            # Spring Security, Web 설정
+│  │  │     ├─ controller/        # MVC Controller
+│  │  │     ├─ dao/               # MyBatis DAO
+│  │  │     ├─ domain/            # Entity / Domain 객체
+│  │  │     ├─ dto/               # DTO
+│  │  │     ├─ OpenAiClient/      # OpenAI API 연동 로직
+│  │  │     └─ service/           # 비즈니스 로직
+│  │  │
+│  │  ├─ resources/
+│  │  │  ├─ mybatis/
+│  │  │  │  ├─ mapper/            # MyBatis Mapper XML
+│  │  │  │  └─ mappers/
+│  │  │  ├─ templates/            # JSP 템플릿
+│  │  │  │  ├─ cart/
+│  │  │  │  ├─ category/
+│  │  │  │  ├─ find/
+│  │  │  │  ├─ fragments/         # header, footer 공통 레이아웃
+│  │  │  │  ├─ login/
+│  │  │  │  ├─ order/
+│  │  │  │  ├─ product/
+│  │  │  │  ├─ seller/
+│  │  │  │  └─ user/
+│  │  │  ├─ static/
+│  │  │  │  ├─ css/               # 페이지별 CSS
+│  │  │  │  ├─ img/               # 이미지 리소스
+│  │  │  │  └─ js/                # JS (차트, 채팅, 대시보드)
+│  │  │  ├─ application.properties
+│  │  │  ├─ mybatis-config.xml
+│  │  │  └─ keystore.p12          # HTTPS 인증서
+│  │
+│  └─ test/                       # 테스트 코드
+│
+├─ build.gradle                   # Gradle 빌드 설정
+├─ settings.gradle
+├─ gradlew / gradlew.bat
+└─ README.md
+```
+<br/>
+
+---
 ## ✨ Key Features
 
-**👤 회원 관리 (Member)**
+### 👤 회원 관리 (Member)
+- **회원가입 / 로그인**  
+  Spring Security 기반 폼 로그인 및 보안 설정 적용
+- **권한 제어**  
+  일반 사용자(USER) / 관리자(ADMIN) 권한 분리
+- **AI 상담 챗봇**  
+  GPT-4o-mini를 활용한 상품 문의 자동 응답
+- **실시간 상담 채팅**  
+  WebSocket 기반 1:1 실시간 채팅 지원  
+  채팅 로그는 MongoDB에 비동기 저장
 
-회원가입/로그인: 
-Spring Security를 활용한 폼 기반 로그인 및 보안 설정.
+---
 
-권한 제어: 일반 사용자(USER)와 관리자(ADMIN) 권한 분리.
+### 🛍 상품 관리 (Item)
+- **상품 등록 / 수정**  
+  관리자 권한 사용자만 상품 이미지 및 상세 정보 관리 가능
+- **상품 조회**  
+  페이징 처리 및 검색 기능을 통한 상품 목록 제공
 
-GPT-4o-mini AI 상담: 사용자의 상품 문의를 실시간으로 분석하여 적절한 답변을 제공하는 지능형 챗봇을 구현했습니다.
+---
 
-실시간 WebSocket 채팅: 상담사와 1:1 실시간 채팅이 가능하며, 대화 내용은 MongoDB에 비동기로 저장되어 대용량 메시지 데이터를 효율적으로 관리합니다.
+### 🛒 주문 시스템 (Cart & Order)
+- **장바구니**  
+  상품 담기 및 수량 변경 기능 제공
+- **주문 / 결제**  
+  Toss Payments API 연동을 통한 실제 결제 프로세스 구현
+- **주문 내역 관리**  
+  주문 기록 조회 및 주문 취소 기능 제공
 
-**🛍 상품 관리 (Item)**
+---
 
-상품 등록/수정: 관리자 권한을 가진 사용자만 상품 이미지와 상세 정보를 등록 및 수정 가능.
-
-상품 조회: 페이징 처리 및 검색 기능을 통한 효율적인 상품 목록 제공.
-
-**🛒 주문 시스템 (Cart & Order)**
-
-장바구니: 구매를 원하는 상품을 장바구니에 담고 수량 조절 가능.
-
-주문/결제: 장바구니 아이템 주문 및 Toss Payment API를 이용한 실제 결제 프로세스 구현.
-
-주문 내역: 사용자의 과거 주문 기록 확인 및 취소 기능.
-
-**👑 관리자 기능 (Admin Side)**
-
-관리자 권한(ROLE_ADMIN)을 가진 계정만 접근 가능한 백오피스 기능입니다.
-
-상품 등록 (Item Management): * 상품명, 가격, 상세 설명 및 재고 수량 설정.
-
-다중 상품 이미지 업로드 및 대표 이미지 설정.
-
-상품 수정 및 상태 관리: * 기존 상품 정보 수정.
-
-상품 상태 변경 (판매 중 / 품절)을 통한 노출 제어.
-
-재고 관리: 주문 및 취소 발생 시 실시간 재고 증감 로직 반영.
-
-주문 현황 모니터링: 모든 사용자의 주문 내역을 대시보드 방식으로 표시하고 관리.
-
-통합 상담 센터: 사용자의 상담 요청 목록 확인 및 실시간 1:1 대화 응대
-
-보안: 역할 기반 접근 제어(RBAC)를 통해 관리자 전용 메뉴 접근을 보호합니다.
+### 👑 관리자 기능 (Admin Side)
+- **관리자 전용 백오피스**  
+  ROLE_ADMIN 권한 계정만 접근 가능
+- **상품 관리**
+  - 상품명, 가격, 상세 설명, 재고 수량 설정  
+  - 다중 상품 이미지 업로드 및 대표 이미지 지정  
+  - 상품 상태 관리 (판매 중 / 품절)
+- **재고 관리**  
+  주문 및 취소 시 실시간 재고 증감 처리
+- **주문 현황 관리**  
+  전체 주문 내역을 대시보드 형태로 조회 및 관리
+- **통합 상담 센터**  
+  상담 요청 목록 확인 및 실시간 1:1 채팅 응대
+- **보안**  
+  RBAC(Role Based Access Control) 기반 관리자 기능 접근 제어
 
 
 ## ERD
 
 <img width="1731" height="1448" alt="image" src="https://github.com/user-attachments/assets/326f24f6-409d-4f37-ac39-ba31cc7e6faf" />
 
+<details>
+  <summary><b>📋 테이블 세부 명세서 보기</b></summary>
+  <br>
+<img width="1835" height="7033" alt="3차프로젝트_테이블명세서_최종" src="https://github.com/user-attachments/assets/676470ce-0894-4761-9a49-3e8becd2ef84" />
+
+</details>
+
+## 📂 Project Documents (기타 문서)
+
+프로젝트 진행 시 작성된 설계 문서입니다. 클릭 시 상세 내용을 확인할 수 있습니다.
+
+| 문서 종류 | 파일명 | 형식 | 바로가기 |
+| :--- | :--- | :---: | :---: |
+| **화면 설계서** | 화면설계서.pdf | ![PDF](https://img.shields.io/badge/PDF-F40F02?style=flat-square&logo=adobe-acrobat-reader&logoColor=white) | [📄 문서 보기](https://github.com/user-attachments/files/24488584/default.pdf) |
+| **서비스구조** | 테이블명세서.xls | ![PDF](https://img.shields.io/badge/PDF-F40F02?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)  | [📄 문서 보기](https://github.com/user-attachments/files/24488677/default.pdf) |
+
+<br/>
 
 ## UI/UX Screenshot
 
