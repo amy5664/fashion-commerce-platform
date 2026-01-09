@@ -45,6 +45,9 @@ Boot Sales Platform은 사용자가 상품을 쉽게 탐색하고, 찜하기·�
 > - ⭐⭐   : 주요 기능 구현  
 > - ⭐     : 일부 기능 구현
 
+📄 <a href="pdf/fashion-commerce-platform_gayoung.pdf" target="_blank">
+<strong>개인 기여 상세 문서 (PDF)</strong>
+</a>
 
 ---
 ## 🛠 Tech Stack
