@@ -133,10 +133,16 @@ Product-sales-platform-boot/
   Spring Security 기반 폼 로그인 및 보안 설정 적용
 - **권한 제어**  
   일반 사용자(USER) / 관리자(ADMIN) 권한 분리
+
+---
+
+### 💬 AI 상담 & 실시간 채팅 (Chatbot)
 - **AI 상담 챗봇**  
-  GPT-4o-mini를 활용한 상품 문의 자동 응답
-- **실시간 상담 채팅**  
-  WebSocket 기반 1:1 실시간 채팅 지원  
+  GPT-4o-mini를 활용해 상품 및 서비스 관련 기본 문의를 자동 응답
+- **상담원 연결**  
+  챗봇으로 해결되지 않는 문의는 상담원 1:1 채팅으로 전환
+- **실시간 채팅**  
+  WebSocket 기반 실시간 상담 지원  
   채팅 로그는 MongoDB에 비동기 저장
 
 ---
@@ -146,6 +152,9 @@ Product-sales-platform-boot/
   관리자 권한 사용자만 상품 이미지 및 상세 정보 관리 가능
 - **상품 조회**  
   페이징 처리 및 검색 기능을 통한 상품 목록 제공
+- **찜하기(Wishlist)**  
+  로그인 사용자가 관심 상품을 찜 목록에 추가/삭제 가능  
+  사용자별 찜 목록을 관리하여 마이페이지에서 조회 가능
 
 ---
 
@@ -174,6 +183,7 @@ Product-sales-platform-boot/
   상담 요청 목록 확인 및 실시간 1:1 채팅 응대
 - **보안**  
   RBAC(Role Based Access Control) 기반 관리자 기능 접근 제어
+
 
 
 ## ERD
