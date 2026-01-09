@@ -55,7 +55,6 @@
 | ![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white) | 문서화 및 일정 관리 |
 | ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white) | 이슈 및 작업 관리 |
 | ![Slack](https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white) | 팀 커뮤니케이션 |
-| ![KakaoTalk](https://img.shields.io/badge/KakaoTalk-FFCD00?style=flat&logo=kakaotalk&logoColor=black) | 실시간 소통 |
 
 ---
 ## 📁 Project Structure (프로젝트 폴더 구조)
