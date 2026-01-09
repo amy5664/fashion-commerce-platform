@@ -188,48 +188,91 @@ Product-sales-platform-boot/
 ### 유저 전용 UI
 
 <details>
-  <summary>메인화면</summary>
-<img width="1601" height="942" alt="chrome_DHcEmL3QNu" src="https://github.com/user-attachments/assets/5a117255-4963-4379-8f08-13b3d7f35b97" />
+  <summary>메인 화면</summary>
+  <br>
 
-- 구조: ItemController → ItemService → ItemRepository(QueryDSL)
+  <img src="src/main/resources/static/img/main.gif" alt="메인 화면" width="700"/>
 
-- 핵심 로직:
+  - **구조**  
+    ItemController → ItemService → ItemRepository (QueryDSL)
 
-     동적 쿼리: QueryDSL을 사용하여 상품명, 상품 상태, 등록자별 검색 기능을 구현했습니다.
-
-     페이징(Pagination): Pageable 인터페이스를 활용해 대량의 상품 데이터를 효율적으로 끊어서 로드합니다.
- 
-     이미지 최적화: ItemImgRepository에서 repImgYn="Y"인 대표 이미지만 추출하여 메인 리스트에 노출합니다.
-  
+  - **핵심 로직**
+    - **동적 검색**: QueryDSL을 활용해 상품명, 상품 상태, 등록자 조건별 검색 기능 구현
+    - **페이징 처리**: Pageable 인터페이스를 사용해 대량 데이터 분할 조회
+    - **이미지 최적화**: 대표 이미지(`repImgYn = 'Y'`)만 조회하여 메인 리스트에 노출
 </details>
+
 
 <details>
   <summary>상품 상세페이지</summary>
-<img width="1606" height="846" alt="chrome_V28P15tZbg" src="https://github.com/user-attachments/assets/1e493341-16e7-4395-8528-1f41d7a90608" />
+  <br>
 
-- 구조: Item 엔티티와 ItemImg 엔티티의 1:N 매핑 구조
+  <div style="display:flex; gap:20px;">
+    <img src="src/main/resources/static/img/product_detail.gif"
+         alt="상품 상세"
+         width="48%" />
+<img src="src/main/resources/static/img/product_inquiry.gif"
+         alt="상품 문의"
+         width="48%" />
+  </div>
+  
+ - **구조**
+    - Item ↔ ItemImg : 1:N 매핑으로 상품 기본 정보 + 이미지 리스트를 함께 구성
+    - ItemDetail 화면 내 탭 구성(상세/리뷰/문의)로 기능을 분리하여 제공
 
-- 핵심 로직:
-
-    상품 ID(itemId)를 경로 변수로 받아 상품 기본 정보와 등록된 모든 이미지 리스트를 함께 조회합니다.
-
-    조회수/재고 확인: 실시간 재고 수량을 파악하여 '품절' 상태일 경우 '주문하기' 버튼을 비활성화 처리합니다.
-
+  - **핵심 로직**
+    - **상품 상세 조회**
+      - 상품 ID(`itemId`)를 경로 변수로 받아 상품 정보와 등록된 이미지 목록을 함께 조회합니다.
+      - **재고 상태 처리**: 재고 수량을 확인해 `품절`이면 `주문하기` 버튼을 비활성화합니다.
+    - **상품 문의**
+      - 상품 상세 페이지에서 **문의 탭**을 통해 문의를 등록/조회할 수 있습니다.
+      - **등록**: 로그인 사용자 기준으로 제목/내용을 저장하고, 상품 ID와 함께 매핑합니다.
+      - **조회**: 상품 ID 기준으로 해당 상품의 문의 목록을 조회하여 화면에 표시합니다.
 </details>
+
 
 <details>
-  <summary>상품 구매(결제)페이지</summary>
-<img width="1567" height="852" alt="chrome_umQpbhperS" src="https://github.com/user-attachments/assets/6b090870-bda5-41aa-9c30-d589c9e729b5" />
+  <summary>찜하기(wishlist)</summary>
+  <br>
 
-- 구조: OrderController → OrderService → Toss Payments API
+  <img src="src/main/resources/static/img/wishlist.gif"
+       alt="찜하기"
+       width="700" />
 
-- 핵심 로직:
+  - **구조**
+    - User ↔ Item : 사용자별 찜 목록을 관리하는 관계로 구성
+    - 상품 상세 화면에서 찜 상태를 토글할 수 있도록 UI와 기능을 연결
 
-    트랜잭션 관리: 주문 생성 시 Item 엔티티의 removeStock 메서드를 호출하여 재고를 차감합니다. (재고 부족 시 OutOfStockException 발생)
-
-    결제 검증: 프론트엔드에서 전달받은 결제 금액과 서버 DB의 실제 상품 금액을 대조하여 위변조를 방지하는 검증 로직을 거친 후 Toss API 최종 승인을 호출합니다.
-  
+  - **핵심 로직**
+    - **찜 등록/해제**
+      - 하트 버튼 클릭 시 찜 상태를 토글하며, 이미 찜한 상품이면 해제 처리합니다.
+      - 로그인 사용자 기준으로 찜 정보를 저장/삭제하여 사용자별 목록을 분리합니다.
+    - **중복 방지**
+      - 동일 사용자-상품 조합은 중복 저장되지 않도록 처리합니다.
 </details>
+
+
+<details>
+  <summary>상품 구매(결제) 페이지</summary>
+  <br>
+
+  <img src="src/main/resources/static/img/product_order.gif"
+       alt="상품 구매 결제 페이지"
+       width="700" />
+
+  - **구조**
+    - OrderController → OrderService → Toss Payments API
+
+  - **핵심 로직**
+    - **주문 생성**
+      - 결제 요청 시 주문 정보를 생성하고 트랜잭션 범위 내에서 재고를 차감합니다.
+      - `Item.removeStock()` 호출 시 재고 부족하면 `OutOfStockException`을 발생시켜 전체 주문을 롤백합니다.
+    - **결제 검증**
+      - 프론트엔드에서 전달된 결제 금액과 서버 DB에 저장된 실제 상품 금액을 비교 검증합니다.
+      - 검증이 완료된 경우에만 Toss Payments API를 호출하여 최종 결제 승인을 처리합니다.
+</details>
+
+
 
 <details>
   <summary>마이페이지</summary>
@@ -248,17 +291,79 @@ Product-sales-platform-boot/
     주문 취소: 배송 시작 전(ORDER 상태)에만 취소가 가능하도록 검증 로직이 포함되어 있습니다.
 </details>
 
+
 ### 관리자 전용 UI
 
 <details>
-  <summary>대시보드</summary>
-<img width="1587" height="840" alt="chrome_otZmBEAbIW" src="https://github.com/user-attachments/assets/6a9c7503-473a-4868-af66-0b8e2ae9d429" />
+  <summary>관리자 대시보드</summary>
+  <br>
+
+  <img src="src/main/resources/static/img/admin_dashboard.gif"
+       alt="관리자 대시보드"
+       width="700" />
+
+  - **구조**
+    - AdminDashboardController → AdminDashboardService → Repository(통계/집계 쿼리)
+    - 주문/회원/상품 등 주요 데이터를 집계하여 카드형 지표 + 차트 형태로 시각화
+
+  - **핵심 로직**
+    - **핵심 지표 집계**
+      - 전체 주문 수, 매출, 신규 회원 수 등 관리자 핵심 지표를 집계하여 대시보드 상단에 표시합니다.
+    - **기간/조건 기반 조회**
+      - 일/주/월 단위(또는 기간 조건)로 통계 데이터를 조회하여 차트에 반영합니다.
+    - **운영 편의 기능**
+      - 대시보드에서 주요 관리 화면(주문 관리, 상품 관리 등)으로 빠르게 이동할 수 있도록 구성합니다.
 </details>
 
+
 <details>
-  <summary>주문관리</summary>
-<img width="1600" height="840" alt="chrome_mOk8ryT3lL" src="https://github.com/user-attachments/assets/e498aa08-7a33-4de7-84b8-cde1ee6a43a2" />
+  <summary>관리자 주문관리</summary>
+  <br>
+
+  <img src="src/main/resources/static/img/admin_order.gif"
+       alt="관리자 주문관리"
+       width="700" />
+
+  - **구조**
+    - AdminOrderController → AdminOrderService → Repository(주문/배송 조회 및 상태 변경)
+    - 주문 목록 조회 + 상태/배송 정보 등록 기능을 한 화면에서 관리
+
+  - **핵심 로직**
+    - **주문 목록 조회**
+      - 주문번호, 구매자, 상품 수량, 결제 금액, 주문 일시, 주문 상태 등의 정보를 목록으로 조회합니다.
+    - **배송 정보 등록**
+      - 택배사 선택 및 송장번호 입력 후 저장하여 배송 정보를 등록합니다.
+    - **상태 관리**
+      - 주문 상태(예: 결제 완료/배송 중/배송 완료 등)를 변경하여 주문 처리 흐름을 관리합니다.
 </details>
+
+### 챗봇 & 상담원 연결 UI
+<details>
+  <summary>챗봇 & 상담원 연결</summary>
+  <br>
+
+  <div style="display:flex; gap:20px;">
+    <img src="src/main/resources/static/img/chatbot_main.gif"
+         alt="챗봇 메인"
+         width="48%" />
+    <img src="src/main/resources/static/img/chatbot_agent_connect.gif"
+         alt="상담원 연결"
+         width="48%" />
+  </div>
+
+  - **구조**
+    - Chatbot UI(프론트) → ChatController → ChatService(응답 처리)
+    - 자동 응답으로 해결이 어려운 경우 상담원 연결(실시간 문의)로 전환
+
+  - **핵심 로직**
+    - **챗봇 상담**
+      - 사용자의 질문을 입력받아 키워드/시나리오 기반으로 즉시 응답을 제공합니다.
+      - FAQ/공지 등 기본 문의를 빠르게 처리하여 사용자의 탐색 시간을 줄입니다.
+    - **상담원 연결**
+      - 챗봇으로 해결되지 않는 문의는 상담원 연결 버튼을 통해 실시간 문의로 전환합니다.
+      - 문의 접수 상태를 사용자/관리자 화면에서 확인할 수 있도록 구성합니다.
+</details>
+
 
 
 ## 🗺️ 시스템 구조도 (Architecture Diagram)
